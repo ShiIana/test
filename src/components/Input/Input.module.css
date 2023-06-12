@@ -1,0 +1,24 @@
+.inputWrapper {
+    position: relative;
+}
+
+.input {
+    font: inherit;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--medium);
+    border-radius: 4px;
+    padding: 8px 32px 8px 8px;
+}
+
+.input:focus {
+    outline-color: var(--primary);
+}
+
+.icon {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    font-size: 22px;
+}

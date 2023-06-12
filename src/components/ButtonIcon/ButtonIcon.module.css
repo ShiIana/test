@@ -1,0 +1,37 @@
+.button {
+    background-color: transparent;
+    font: inherit;
+    font-weight: 700;
+    font-size: 25px;
+    border: 1px solid transparent;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.primary {
+    color: var(--primary);
+}
+
+.primary:hover {
+    color: var(--primary-dark);
+    background-color: var(--secondary);
+}
+
+.secondary {
+    color: var(--primary);
+}
+
+.secondary:hover {
+    color: var(--primary-dark);
+}

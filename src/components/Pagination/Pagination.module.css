@@ -1,0 +1,15 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hidden {
+        display: block;
+    }
+}
