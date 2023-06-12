@@ -14,8 +14,7 @@ export const MovieExtended = ({movie}: MovieExtendedPropsType) => {
         poster_path: poster,
         year,
         title,
-        vote_average: rating,
-        ...restProps
+        vote_average: rating
     } = movie;
 
 

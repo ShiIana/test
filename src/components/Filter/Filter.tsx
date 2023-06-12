@@ -21,9 +21,10 @@ type FilterPropsType = {
     setFilter: (filter: FilterType) => void
     genres: GenreTypeData[]
     movies: MovieType[]
+    setCurrentPage: (value: number) => void
 }
 
-export const Filter = ({filter, setFilter, genres, movies}: FilterPropsType) => {
+export const Filter = ({filter, setFilter, genres, movies, setCurrentPage}: FilterPropsType) => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const [localFilter, setLocalFilter] = useState<FilterType>(filter);
     const filterRating: RatingType[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -40,6 +41,7 @@ export const Filter = ({filter, setFilter, genres, movies}: FilterPropsType) => 
     }
 
     const onFilterHandler = () => {
+        setCurrentPage(1);
         setFilter({...filter,  ...localFilter})
         showMenu();
     }

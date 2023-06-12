@@ -141,6 +141,7 @@ export const App = () => {
                 setFilter={setFilter}
                 genres={genresData}
                 movies={movies}
+                setCurrentPage={setCurrentPage}
             />
 
             {currentMovies.length === 0 ? <p>Фильмы не найдены =(</p> :
